@@ -1,4 +1,16 @@
 aid: kosen-labs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kosen-labs.png
 name: Kosen Labs
 description: Kosen Labs is a company surfaced as a portfolio company of a16z and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -9,9 +21,40 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  last_run: '2026-07-19'
+  result: no-public-surface
+  note: Name-only a16z portfolio listing. No company website, developer portal, GitHub
+    org, or API surface could be located, so no artifacts were generated. Re-run once
+    a canonical domain is known.
+  source_verified:
+    url: https://a16z.com/investment-list/
+    status: 200
+    evidence: '"kosen labs" appears in the investment list, names only, with no linked
+      URL'
+  domains_probed:
+  - {domain: kosenlabs.com, dns: 107.173.2.166, http: 502, result: no-content}
+  - {domain: kosen.ai, dns: resolves, http: 200, result: parked-for-sale}
+  - {domain: kosen.io, dns: resolves, http: 200, result: parked-lander}
+  - {domain: kosen.dev, dns: resolves, http: 200, result: unrelated-japanese-domain}
+  - {domain: kosen.co, dns: resolves, http: 000, result: tls-failure}
+  - {domain: kosen.com, dns: resolves, http: 000, result: self-signed-cert}
+  - {domain: kosenlabs.ai, dns: NXDOMAIN}
+  - {domain: kosenlabs.io, dns: NXDOMAIN}
+  - {domain: kosenlabs.dev, dns: NXDOMAIN}
+  - {domain: kosenlabs.xyz, dns: NXDOMAIN}
+  - {domain: kosenlabs.app, dns: NXDOMAIN}
+  - {domain: kosenlabs.jp, dns: NXDOMAIN}
+  - {domain: kosenlabs.tech, dns: NXDOMAIN}
+  - {domain: kosen-labs.com, dns: NXDOMAIN}
+  - {domain: kosenlabs.co, dns: NXDOMAIN}
+  - {domain: trykosen.com, dns: NXDOMAIN}
+  - {domain: getkosen.com, dns: NXDOMAIN}
+  github_searched: 'no matching org or repo; all "kosen" hits are Japanese KOSEN technical
+    colleges'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 apis: []
